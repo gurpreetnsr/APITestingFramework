@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 15.218 s <<< FAILURE! - in TestSuite
+validateCreateCustomerAPIWithInvalidSecretKey(com.w2a.APITestingFramework.testcases.CeateCustomerTest)  Time elapsed: 4.82 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [401]
+	at com.w2a.APITestingFramework.testcases.CeateCustomerTest.validateCreateCustomerAPIWithInvalidSecretKey(CeateCustomerTest.java:40)
+
+deleteCustomer(com.w2a.APITestingFramework.testcases.DeleteCustomerTest)  Time elapsed: 2.476 s  <<< FAILURE!
+java.lang.AssertionError: Id key is not present in the response expected [true] but found [false]
+	at com.w2a.APITestingFramework.testcases.DeleteCustomerTest.deleteCustomer(DeleteCustomerTest.java:39)
+

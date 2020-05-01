@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12844" started-at="2020-05-01T14:34:34 IST" finished-at="2020-05-01T14:34:47 IST">
+    <groups>
+    </groups>
+    <test name="Create Customer API Test" duration-ms="9673" started-at="2020-05-01T14:34:34 IST" finished-at="2020-05-01T14:34:44 IST">
+      <class name="com.w2a.APITestingFramework.testcases.CeateCustomerTest">
+        <test-method status="FAIL" signature="validateCreateCustomerAPIWithInvalidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFramework.testcases.CeateCustomerTest@1530c739]" name="validateCreateCustomerAPIWithInvalidSecretKey" duration-ms="4637" started-at="2020-05-01T14:34:35 IST" data-provider="getData" finished-at="2020-05-01T14:34:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=gurpreet1@demo.com, name=gurpreet1, description=This is description 1}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [401]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at org.testng.Assert.assertEquals(Assert.java:849)
+at com.w2a.APITestingFramework.testcases.CeateCustomerTest.validateCreateCustomerAPIWithInvalidSecretKey(CeateCustomerTest.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithInvalidSecretKey -->
+        <test-method status="PASS" signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFramework.testcases.CeateCustomerTest@1530c739]" name="validateCreateCustomerAPIWithValidSecretKey" duration-ms="2470" started-at="2020-05-01T14:34:39 IST" data-provider="getData" finished-at="2020-05-01T14:34:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=gurpreet1@demo.com, name=gurpreet1, description=This is description 1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
+        <test-method status="PASS" signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFramework.testcases.CeateCustomerTest@1530c739]" name="validateCreateCustomerAPIWithValidSecretKey" duration-ms="2263" started-at="2020-05-01T14:34:42 IST" data-provider="getData" finished-at="2020-05-01T14:34:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=gurpreet2@demo.com, name=gurpreet2, description=This is description 2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
+      </class> <!-- com.w2a.APITestingFramework.testcases.CeateCustomerTest -->
+    </test> <!-- Create Customer API Test -->
+    <test name="Delete Customer API Test" duration-ms="2552" started-at="2020-05-01T14:34:45 IST" finished-at="2020-05-01T14:34:47 IST">
+      <class name="com.w2a.APITestingFramework.testcases.DeleteCustomerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.APITestingFramework.testcases.DeleteCustomerTest@795509d9]" name="setUp" is-config="true" duration-ms="640" started-at="2020-05-01T14:34:34 IST" finished-at="2020-05-01T14:34:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="deleteCustomer(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFramework.testcases.DeleteCustomerTest@795509d9]" name="deleteCustomer" duration-ms="2494" started-at="2020-05-01T14:34:45 IST" data-provider="getData" finished-at="2020-05-01T14:34:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=cus_HCJ5OTlLhZeMMU}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Id key is not present in the response expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Id key is not present in the response expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at com.w2a.APITestingFramework.testcases.DeleteCustomerTest.deleteCustomer(DeleteCustomerTest.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.APITestingFramework.testcases.DeleteCustomerTest@795509d9]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-05-01T14:34:48 IST" finished-at="2020-05-01T14:34:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.w2a.APITestingFramework.testcases.DeleteCustomerTest -->
+    </test> <!-- Delete Customer API Test -->
+  </suite> <!-- Suite -->
+</testng-results>
